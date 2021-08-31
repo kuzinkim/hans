@@ -1,0 +1,1188 @@
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("../assets/fonts/FuturaDemiC.woff2") format("woff2"), url("../assets/fonts/FuturaDemiC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FuturaMediumC';
+  src: url("../assets/fonts/FuturaMediumC.woff2") format("woff2"), url("../assets/fonts/FuturaMediumC.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'AG_Futura';
+  src: url("../assets/fonts/AGFutura.woff2") format("woff2"), url("../assets/fonts/AGFutura.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'AG_Futura';
+  src: url("../assets/fonts/AGFuturaBold.woff2") format("woff2"), url("../assets/fonts/AGFuturaBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url("../assets/fonts/FuturaBookC.woff2") format("woff2"), url("../assets/fonts/FuturaBookC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FuturaLightC';
+  src: url("../assets/fonts/FuturaLightC.woff2") format("woff2"), url("../assets/fonts/FuturaLightC.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+/*Fonts*/
+.hidden-min-up {
+  display: none !important; }
+
+@media (max-width: 319px) {
+  .hidden-min-down {
+    display: none !important; } }
+
+@media (max-width: 319px) {
+  .hidden-min-only {
+    display: none !important; } }
+
+@media (min-width: 320px) {
+  .hidden-mobile-up {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .hidden-mobile-down {
+    display: none !important; } }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hidden-mobile-only {
+    display: none !important; } }
+
+@media (min-width: 768px) {
+  .hidden-tablet-up {
+    display: none !important; } }
+
+@media (max-width: 1199px) {
+  .hidden-tablet-down {
+    display: none !important; } }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hidden-tablet-only {
+    display: none !important; } }
+
+@media (min-width: 1200px) {
+  .hidden-desktop-up {
+    display: none !important; } }
+
+.hidden-desktop-down {
+  display: none !important; }
+
+@media (min-width: 1200px) {
+  .hidden-desktop-only {
+    display: none !important; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input::-ms-clear {
+  display: none; }
+
+/**
+ * Main Styles
+ */
+/**
+ * Global
+ */
+*,
+*::after,
+*::before {
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: normal;
+  color: #fff;
+  font-family: 'AG_Futura', sans-serif;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #E5E5E5; }
+  @media (max-width: 767px) {
+    html,
+    body {
+      background-color: #ffffff; } }
+  html.is-hidden,
+  body.is-hidden {
+    overflow: hidden; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 10px; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  max-width: 100%; }
+  @media (max-width: 1199px) {
+    .container {
+      margin: 0 30px;
+      width: auto; } }
+  @media (max-width: 767px) {
+    .container {
+      margin: 0 20px; } }
+
+/**
+ * Elements
+ */
+/**
+ * Components
+ */
+/*
+ * Container style
+ */
+.ps {
+  overflow: hidden !important;
+  overflow-anchor: none;
+  -ms-overflow-style: none;
+  touch-action: auto;
+  -ms-touch-action: auto; }
+
+/*
+ * Scrollbar rail styles
+ */
+.ps__rail-x {
+  display: none;
+  opacity: 0;
+  -o-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color .2s linear, opacity .2s linear;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  height: 15px;
+  /* there must be 'bottom' or 'top' for ps__rail-x */
+  bottom: 0px;
+  /* please don't change 'position' */
+  position: absolute; }
+
+.ps__rail-y {
+  display: none;
+  opacity: 0;
+  -o-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color .2s linear, opacity .2s linear;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  width: 15px;
+  /* there must be 'right' or 'left' for ps__rail-y */
+  right: 0;
+  /* please don't change 'position' */
+  position: absolute; }
+
+.ps--active-x > .ps__rail-x,
+.ps--active-y > .ps__rail-y {
+  display: block;
+  background-color: transparent; }
+
+.ps:hover > .ps__rail-x,
+.ps:hover > .ps__rail-y,
+.ps--focus > .ps__rail-x,
+.ps--focus > .ps__rail-y,
+.ps--scrolling-x > .ps__rail-x,
+.ps--scrolling-y > .ps__rail-y {
+  opacity: 0.6; }
+
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-y.ps--clicking {
+  background-color: #eee;
+  opacity: 0.9; }
+
+/*
+ * Scrollbar thumb styles
+ */
+.ps__thumb-x {
+  background-color: #aaa;
+  border-radius: 6px;
+  -o-transition: background-color .2s linear, height .2s ease-in-out;
+  transition: background-color .2s linear, height .2s ease-in-out;
+  -webkit-transition: background-color .2s linear, height .2s ease-in-out;
+  height: 6px;
+  /* there must be 'bottom' for ps__thumb-x */
+  bottom: 2px;
+  /* please don't change 'position' */
+  position: absolute; }
+
+.ps__thumb-y {
+  background-color: #aaa;
+  border-radius: 6px;
+  -o-transition: background-color .2s linear, width .2s ease-in-out;
+  transition: background-color .2s linear, width .2s ease-in-out;
+  -webkit-transition: background-color .2s linear, width .2s ease-in-out;
+  width: 6px;
+  /* there must be 'right' for ps__thumb-y */
+  right: 2px;
+  /* please don't change 'position' */
+  position: absolute; }
+
+.ps__rail-x:hover > .ps__thumb-x,
+.ps__rail-x:focus > .ps__thumb-x,
+.ps__rail-x.ps--clicking .ps__thumb-x {
+  background-color: #999;
+  height: 11px; }
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  background-color: #999;
+  width: 11px; }
+
+/* MS supports */
+@supports (-ms-overflow-style: none) {
+  .ps {
+    overflow: auto !important; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps {
+    overflow: auto !important; } }
+
+.main {
+  position: relative; }
+  .main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+    background-color: #242526; }
+    @media (max-width: 1199px) {
+      .main::after {
+        bottom: 36px; } }
+    @media (max-width: 1024px) {
+      .main::after {
+        bottom: -30px; } }
+    @media (max-width: 767px) {
+      .main::after {
+        content: none; } }
+  .main-inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    @media (max-width: 767px) {
+      .main-inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        position: static; } }
+  .main-col {
+    z-index: 1; }
+    .main-col:first-child {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      padding-top: 45px;
+      position: relative; }
+      @media (max-width: 1199px) {
+        .main-col:first-child {
+          padding-top: 23px; } }
+      @media (max-width: 767px) {
+        .main-col:first-child {
+          padding-top: 0;
+          top: -50px;
+          z-index: 10; } }
+    .main-col:last-child {
+      max-width: 565px;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
+      @media (max-width: 1199px) {
+        .main-col:last-child {
+          max-width: 500px; } }
+      @media (max-width: 1024px) {
+        .main-col:last-child {
+          max-width: 360px; } }
+      @media (max-width: 767px) {
+        .main-col:last-child {
+          max-width: 100%; } }
+    .main-col-wrap {
+      position: relative;
+      z-index: 5; }
+      @media (max-width: 767px) {
+        .main-col-wrap {
+          background-image: url(../assets/images/main-mob.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          padding: 30px;
+          border-radius: 0px 40px 0px 40px; } }
+  .main__wrapper {
+    padding-top: 50px;
+    position: relative; }
+  .main__img-wrapper {
+    border-radius: 0px 0px 40px 40px;
+    overflow: hidden; }
+    @media (max-width: 767px) {
+      .main__img-wrapper {
+        border-radius: 0;
+        width: auto;
+        margin: 0 -20px; } }
+  .main__title {
+    font-size: 45px;
+    line-height: 49px;
+    font-weight: 600;
+    margin: 31px 0 42px;
+    font-family: 'FuturaDemiC', sans-serif;
+    max-width: 520px; }
+    @media (max-width: 767px) {
+      .main__title {
+        font-size: 40px;
+        line-height: 40px;
+        margin: 60px 0 60px;
+        max-width: 290px; } }
+  .main__button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 193px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 9px 20px 9px 20px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .main__button:hover {
+      background-color: #219280;
+      border: 1px solid #219280; }
+    .main__button img {
+      width: 7px;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
+  .main__logo {
+    background-color: #26A792;
+    position: relative;
+    width: 111px;
+    height: 104px; }
+    .main__logo img {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .main__wave {
+    position: absolute;
+    top: -6px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 1160px;
+    z-index: 1; }
+    @media (max-width: 1199px) {
+      .main__wave {
+        top: -59px; } }
+    @media (max-width: 1024px) {
+      .main__wave {
+        top: -57px; } }
+    @media (max-width: 767px) {
+      .main__wave {
+        display: none; } }
+
+.hansgrohe {
+  padding-top: 156px;
+  padding-bottom: 206px; }
+  @media (max-width: 1024px) {
+    .hansgrohe {
+      padding-bottom: 60px; } }
+  @media (max-width: 767px) {
+    .hansgrohe {
+      padding-top: 30px;
+      padding-bottom: 50px; } }
+  .hansgrohe__inner {
+    position: relative; }
+  .hansgrohe__head {
+    background-color: #26A792;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0 20px 498px;
+    border-radius: 40px 0px 0px 0px; }
+    @media (max-width: 1024px) {
+      .hansgrohe__head {
+        padding: 20px 0 20px 270px; } }
+    @media (max-width: 767px) {
+      .hansgrohe__head {
+        padding: 32px 0 33px 132px;
+        position: relative;
+        -webkit-box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1); } }
+    .hansgrohe__head-pic {
+      position: absolute;
+      left: 106px;
+      top: -77px;
+      bottom: 0;
+      max-width: 326px; }
+      @media (max-width: 1024px) {
+        .hansgrohe__head-pic {
+          left: 24px;
+          top: -51px;
+          max-width: 218px; } }
+      @media (max-width: 767px) {
+        .hansgrohe__head-pic {
+          width: 89px;
+          max-width: 100%;
+          margin-right: 23px;
+          -webkit-flex-shrink: 0;
+              -ms-flex-negative: 0;
+                  flex-shrink: 0;
+          top: -44px;
+          left: 20px; } }
+    .hansgrohe__head-title {
+      font-size: 45px;
+      line-height: 50px;
+      font-weight: 600;
+      font-family: 'FuturaDemiC', sans-serif; }
+      @media (max-width: 767px) {
+        .hansgrohe__head-title {
+          font-size: 30px;
+          line-height: 30px; } }
+  .hansgrohe__main {
+    background-color: #fff;
+    color: #000;
+    padding: 40px 0 48px 498px;
+    border-radius: 0px 0px 40px 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (max-width: 1024px) {
+      .hansgrohe__main {
+        padding: 40px 0 48px 270px; } }
+    @media (max-width: 767px) {
+      .hansgrohe__main {
+        padding: 26px 0 37px 20px;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1); } }
+    .hansgrohe__main-col {
+      width: 50%; }
+      .hansgrohe__main-col:last-child {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        @media (max-width: 500px) {
+          .hansgrohe__main-col:last-child {
+            margin-top: 25px; } }
+  .hansgrohe__text {
+    margin-bottom: 7px; }
+  .hansgrohe__name {
+    font-size: 24px;
+    line-height: 34px;
+    color: #000;
+    font-weight: 600;
+    max-width: 249px;
+    display: block; }
+  .hansgrohe__price {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 22px; }
+    .hansgrohe__price-new {
+      color: #EE7307;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px; }
+    .hansgrohe__price-old {
+      font-size: 14px;
+      line-height: 29px;
+      text-decoration: line-through;
+      display: block;
+      margin-left: 17px; }
+  .hansgrohe__list-item {
+    font-size: 14px;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 15px; }
+    .hansgrohe__list-item::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background-color: #808080;
+      border-radius: 50%;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .hansgrohe__button {
+    margin-top: auto; }
+
+.text {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.5);
+  display: block; }
+
+.button {
+  max-width: 140px;
+  background-color: #26A792;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px 27px 10px 27px;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; }
+  .button:hover {
+    background-color: #219280; }
+  .button__icon {
+    width: 7px; }
+
+.sezon {
+  padding-bottom: 95px; }
+  .sezon__wrap {
+    max-width: 421px; }
+  .sezon__inner {
+    position: relative;
+    margin-top: 55px; }
+    @media (max-width: 767px) {
+      .sezon__inner {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        margin-top: 0; } }
+  .sezon__product {
+    background-color: #fff;
+    color: #000;
+    padding: 32px 46px 51px;
+    -webkit-box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 0px;
+    position: relative; }
+    @media (max-width: 767px) {
+      .sezon__product {
+        border-radius: 0;
+        width: auto;
+        margin: 0 -20px;
+        padding: 32px 20px 60px; } }
+    .sezon__product-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .sezon__product-item {
+      width: auto;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+      margin: 0 10px; }
+      .sezon__product-item:nth-child(1) .sezon__product-pic img {
+        width: 63px; }
+      .sezon__product-item:nth-child(1) .sezon__product-pic--sezon img {
+        width: 91px; }
+      .sezon__product-item:nth-child(2) .sezon__product-pic img {
+        width: 241px; }
+      .sezon__product-item:nth-child(2) .sezon__product-pic--sezon img {
+        width: 65px; }
+      .sezon__product-item:nth-child(3) .sezon__product-pic img {
+        width: 34px; }
+      .sezon__product-item:nth-child(3) .sezon__product-pic--sezon img {
+        width: 160px; }
+      .sezon__product-item:nth-child(4) .sezon__product-pic img {
+        width: 146px; }
+      .sezon__product-item:nth-child(4) .sezon__product-pic--sezon img {
+        width: 232px; }
+    .sezon__product-name {
+      font-size: 16px;
+      line-height: 24px; }
+    .sezon__product-price {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      margin-top: 7px;
+      margin-bottom: 12px; }
+      .sezon__product-price--new {
+        color: #EE7307;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 700;
+        margin-right: 10px; }
+      .sezon__product-price--old {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration: line-through; }
+      .sezon__product-price--current {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px; }
+    .sezon__product-pic {
+      height: 166px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 13px; }
+  .sezon__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    display: block;
+    margin-bottom: 60px; }
+    @media (max-width: 767px) {
+      .sezon__text {
+        margin-bottom: 40px; } }
+  .sezon__name {
+    font-size: 16px;
+    line-height: 24px; }
+  .sezon__button {
+    max-width: 193px;
+    padding: 10px 18px 10px 17px; }
+  .sezon__pic {
+    position: absolute;
+    right: 0;
+    bottom: 65%;
+    max-width: 710px;
+    z-index: -1; }
+    @media (max-width: 1199px) {
+      .sezon__pic {
+        bottom: 78%;
+        max-width: 570px; } }
+    .sezon__pic--eco {
+      max-width: 565px;
+      bottom: 87%;
+      border-radius: 40px;
+      overflow: hidden; }
+      @media (max-width: 1199px) {
+        .sezon__pic--eco {
+          max-width: 514px; } }
+    @media (max-width: 1024px) {
+      .sezon__pic {
+        bottom: 85%;
+        max-width: 390px; } }
+    @media (max-width: 767px) {
+      .sezon__pic {
+        position: relative;
+        max-width: 500px;
+        margin: auto;
+        bottom: -52px; } }
+  .sezon__title {
+    margin-bottom: 30px; }
+
+.title {
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #000000;
+  display: block;
+  font-family: 'FuturaDemiC', sans-serif;
+  border-bottom: 5px solid #26A792;
+  padding-bottom: 10px; }
+  @media (max-width: 767px) {
+    .title {
+      font-size: 38px;
+      line-height: 41px; } }
+
+.colection {
+  padding-bottom: 204px; }
+  @media (max-width: 1024px) {
+    .colection {
+      padding-bottom: 60px; } }
+  @media (max-width: 767px) {
+    .colection {
+      padding-bottom: 50px; } }
+  .colection__right {
+    width: 100%;
+    padding-left: 94px;
+    padding-top: 126px;
+    position: relative; }
+    @media (max-width: 1199px) {
+      .colection__right {
+        padding-left: 50px; } }
+    @media (max-width: 1024px) {
+      .colection__right {
+        padding-left: 45px;
+        padding-top: 45px; } }
+    @media (max-width: 767px) {
+      .colection__right {
+        background-image: url(../assets/images/colection-wave1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 258px 0 98px 20px;
+        margin: -164px -20px 0;
+        width: auto;
+        height: 100%;
+        background-position: center; } }
+  .colection__head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .colection__button {
+    width: 193px;
+    max-width: 100%;
+    padding: 10px 22px 10px 20px; }
+    @media (max-width: 767px) {
+      .colection__button {
+        display: none; } }
+    .colection__button--hide {
+      display: none; }
+      @media (max-width: 767px) {
+        .colection__button--hide {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+          max-width: 193px;
+          padding: 10px 20px 10px 20px; } }
+  .colection-slider {
+    margin-top: 95px; }
+    @media (max-width: 1024px) {
+      .colection-slider {
+        margin-top: 45px; } }
+    @media (max-width: 767px) {
+      .colection-slider {
+        margin-top: 35px; } }
+    .colection-slider__pic {
+      max-width: 565px;
+      border-radius: 40px;
+      overflow: hidden;
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
+      @media (max-width: 1024px) {
+        .colection-slider__pic {
+          max-width: 380px; } }
+      .colection-slider__pic-wrap {
+        position: relative;
+        z-index: 1; }
+      .colection-slider__pic::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-image: url("../assets/images/colection-wave.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 1160px; }
+        @media (max-width: 1024px) {
+          .colection-slider__pic::after {
+            top: 20px;
+            bottom: 20px; } }
+        @media (max-width: 767px) {
+          .colection-slider__pic::after {
+            content: none; } }
+  .colection__bottom {
+    position: relative; }
+    .colection__bottom::after {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: 0;
+      right: 0;
+      bottom: 35px;
+      background-color: #242526; }
+      @media (max-width: 1024px) {
+        .colection__bottom::after {
+          top: 20px;
+          bottom: 20px; } }
+      @media (max-width: 767px) {
+        .colection__bottom::after {
+          content: none; } }
+    .colection__bottom .container {
+      height: 100%; }
+  .colection-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    height: 100%; }
+    @media (max-width: 767px) {
+      .colection-wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+  .colection__name {
+    font-size: 38px;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 18px; }
+    .colection__name--small {
+      color: #26A792;
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 7px; }
+  .colection__text {
+    font-size: 16px;
+    line-height: 24px; }
+    @media (max-width: 767px) {
+      .colection__text {
+        display: block;
+        margin-bottom: 46px;
+        max-width: 360px; } }
+
+.swiper-pagination {
+  right: calc((100vw - 565px) / 2);
+  bottom: 80px; }
+  @media (max-width: 1199px) {
+    .swiper-pagination {
+      right: auto;
+      left: 645px; } }
+  @media (max-width: 1024px) {
+    .swiper-pagination {
+      bottom: 20px;
+      left: 452px; } }
+  @media (max-width: 767px) {
+    .swiper-pagination {
+      right: auto;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      width: 100%;
+      bottom: 0; } }
+  .swiper-pagination .swiper-pagination-bullet {
+    border-radius: 0;
+    opacity: 1;
+    margin: 0 5px;
+    padding: 20px 0;
+    background: transparent;
+    width: 30px; }
+    .swiper-pagination .swiper-pagination-bullet::after {
+      content: '';
+      background: #B7B7B7;
+      height: 3px;
+      display: block; }
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background: transparent; }
+    .swiper-pagination .swiper-pagination-bullet-active::after {
+      background: #26A792; }
+
+.technology__section {
+  position: relative;
+  overflow: hidden; }
+  .technology__section::after {
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #242526; }
+    @media (max-width: 767px) {
+      .technology__section::after {
+        content: none; } }
+
+.technology__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1024px) {
+    .technology__inner {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  @media (max-width: 767px) {
+    .technology__inner {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.technology__col {
+  position: relative;
+  z-index: 1; }
+  .technology__col:first-child {
+    max-width: 565px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+    @media (max-width: 767px) {
+      .technology__col:first-child {
+        position: relative;
+        z-index: 100; } }
+  .technology__col--right {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-left: 94px;
+    padding-top: 26px; }
+    @media (max-width: 1199px) {
+      .technology__col--right {
+        padding-left: 40px; } }
+    @media (max-width: 1024px) {
+      .technology__col--right {
+        padding-left: 0;
+        margin-top: 20px;
+        padding-bottom: 40px; } }
+    @media (max-width: 767px) {
+      .technology__col--right {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 308px;
+        padding-bottom: 51px;
+        width: auto;
+        margin: -150px -20px 0;
+        background-image: url(../assets/images/technology-wave1.png);
+        background-size: cover;
+        background-position: center; } }
+
+.technology__title {
+  display: inline-block; }
+
+.technology__button {
+  max-width: 182px;
+  width: 100%; }
+
+.technology__pic {
+  position: relative;
+  top: 26px; }
+
+.technology__name {
+  display: block;
+  font-size: 38px;
+  line-height: 50px;
+  margin-bottom: 18px; }
+
+.technology__text {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 34px; }
+
+.technology__wave {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1160px; }
+  @media (max-width: 767px) {
+    .technology__wave {
+      display: none; } }
+
+@media (max-width: 500px) {
+  .hansgrohe__main-col {
+    width: 100%; }
+  .hansgrohe__name {
+    max-width: 100%; }
+  .hansgrohe__price {
+    margin-top: 8px; }
+  .hansgrohe__list {
+    margin-bottom: 26px; } }
+
+.ps__rail-x {
+  margin: 0 46px 20px;
+  height: 6px !important; }
+  @media (max-width: 767px) {
+    .ps__rail-x {
+      margin: 0 30px 24px; } }
+
+.ps__rail-x, .ps__rail-y {
+  opacity: 1 !important;
+  background-color: #F6F6F6 !important; }
+
+.ps__rail-x:hover > .ps__thumb-x, .ps__rail-x:focus > .ps__thumb-x, .ps__rail-x.ps--clicking .ps__thumb-x {
+  background-color: #26A792 !important;
+  height: 6px !important;
+  bottom: 0 !important; }
+
+.ps__thumb-x {
+  background-color: #26A792 !important;
+  bottom: 0 !important;
+  border-radius: 0px !important; }
+
+@media (max-width: 767px) {
+  .swiper-slide {
+    height: auto; } }
+
+@media (max-width: 413px) {
+  .main__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 30px 0 30px; }
+  .hansgrohe__head {
+    padding: 20px 0 20px 110px; }
+  .hansgrohe__head-pic {
+    width: 70px;
+    top: -17px;
+    left: 20px; }
+  .hansgrohe__head-title {
+    font-size: 20px;
+    line-height: 23px; } }

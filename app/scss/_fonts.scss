@@ -1,0 +1,62 @@
+// @font-face {
+//     font-family: 'SF Pro Display';
+//     src: url('../assets/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+//         url('../assets/fonts/SFProDisplay-Medium.woff') format('woff');
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('../assets/fonts/FuturaDemiC.woff2') format('woff2'),
+        url('../assets/fonts/FuturaDemiC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url('../assets/fonts/FuturaMediumC.woff2') format('woff2'),
+        url('../assets/fonts/FuturaMediumC.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AG_Futura';
+    src: url('../assets/fonts/AGFutura.woff2') format('woff2'),
+        url('../assets/fonts/AGFutura.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AG_Futura';
+    src: url('../assets/fonts/AGFuturaBold.woff2') format('woff2'),
+        url('../assets/fonts/AGFuturaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../assets/fonts/FuturaBookC.woff2') format('woff2'),
+        url('../assets/fonts/FuturaBookC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaLightC';
+    src: url('../assets/fonts/FuturaLightC.woff2') format('woff2'),
+        url('../assets/fonts/FuturaLightC.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

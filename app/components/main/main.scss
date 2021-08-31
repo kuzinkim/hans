@@ -1,0 +1,1007 @@
+@import '../../node_modules/perfect-scrollbar/css/perfect-scrollbar';
+
+.main{
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 35px;
+        background-color: #242526;
+
+        @include media-breakpoint-down(tablet){
+            bottom: 36px;
+        }
+
+        @media (max-width: 1024px){
+            bottom: -30px;
+        }
+
+        @include media-breakpoint-down(mobile) {
+            content: none;
+        }
+    }
+
+    &-inner{
+        display: flex;
+        position: relative;
+
+        @include media-breakpoint-down(mobile) {
+            flex-direction: column-reverse;
+            position: static;
+        }
+    }
+
+    &-col{
+        z-index: 1;
+
+        &:first-child{
+            flex-grow: 1;
+            padding-top: 45px;
+            position: relative;
+
+            @include media-breakpoint-down(tablet){
+                padding-top: 23px;
+            }
+
+            @include media-breakpoint-down(mobile) {
+                padding-top: 0;
+                top: -50px;
+                z-index: 10;
+            }
+        }
+
+        &:last-child{
+            max-width: 565px;
+            flex-shrink: 0;
+
+            @include media-breakpoint-down(tablet){
+                max-width: 500px;
+            }
+
+            @media (max-width: 1024px){
+                max-width: 360px;
+            }
+
+            @include media-breakpoint-down(mobile) {
+                max-width: 100%;
+            }
+        }
+        &-wrap{
+            position: relative;
+            z-index: 5;
+
+            @include media-breakpoint-down(mobile) {
+                background-image: url(../assets/images/main-mob.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                padding: 30px;
+                border-radius: 0px 40px 0px 40px;
+            }
+        }
+    }
+
+    &__wrapper{
+        padding-top: 50px;
+        position: relative;
+    }
+
+    &__img-wrapper{
+        border-radius: 0px 0px 40px 40px;
+        overflow: hidden;
+
+        @include media-breakpoint-down(mobile) {
+            border-radius: 0;
+            width: auto;
+            margin: 0 -20px;
+        }
+    }
+
+    &__title{
+        font-size: 45px;
+        line-height: 49px;
+        font-weight: 600;
+        margin: 31px 0 42px;
+        font-family: 'FuturaDemiC', sans-serif;
+        max-width: 520px;
+
+        @include media-breakpoint-down(mobile) {
+            font-size: 40px;
+            line-height: 40px;
+            margin: 60px 0 60px;
+            max-width: 290px;
+        }
+    }
+
+    &__button{
+        display: flex;
+        max-width: 193px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        line-height: 16px;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        padding: 9px 20px 9px 20px;
+        transition: all 0.3s ease;
+
+        &:hover{
+            background-color: #219280;
+            border: 1px solid #219280;
+        }
+
+        img{
+            width: 7px;
+            flex-shrink: 0;
+        }
+    }
+
+    &__logo{
+        background-color: #26A792;
+        position: relative;
+        width: 111px;
+        height: 104px;
+
+        img{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__wave{
+        position: absolute;
+        top:-6px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 1160px;
+        z-index: 1;
+
+        @include media-breakpoint-down(tablet){
+            top: -59px;
+        }
+
+        @media (max-width: 1024px){
+            top: -57px;
+        }
+
+        @include media-breakpoint-down(mobile) {
+            display: none;
+        }
+    }
+
+}
+
+.hansgrohe{
+    padding-top: 156px;
+    padding-bottom: 206px;
+
+    @media (max-width: 1024px){
+        padding-bottom: 60px;
+    }
+
+    @include media-breakpoint-down(mobile) {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    &__inner{
+        position: relative;
+    }
+
+    &__head{
+        background-color: #26A792;
+        display: flex;
+        padding: 20px 0 20px 498px;
+        border-radius: 40px 0px 0px 0px;
+
+        @media (max-width: 1024px){
+            padding: 20px 0 20px 270px;
+        }
+
+        @include media-breakpoint-down(mobile) {
+            padding: 32px 0 33px 132px;
+            position: relative;
+            box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        &-pic{
+            position: absolute;
+            left: 106px;
+            top: -77px;
+            bottom: 0;
+            max-width: 326px;
+
+            @media (max-width: 1024px){
+                left: 24px;
+                top: -51px;
+                max-width: 218px;
+            }
+
+            @include media-breakpoint-down(mobile) {
+                width: 89px;
+                max-width: 100%;
+                margin-right: 23px;
+                flex-shrink: 0;
+                top: -44px;
+                left: 20px;
+            }
+        }
+
+        &-title{
+            font-size: 45px;
+            line-height: 50px;
+            font-weight: 600;
+            font-family: 'FuturaDemiC', sans-serif;
+
+            @include media-breakpoint-down(mobile) {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    &__main{
+        background-color: #fff;
+        color: #000;
+        padding: 40px 0 48px 498px;
+        border-radius: 0px 0px 40px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1024px){
+            padding: 40px 0 48px 270px;
+        }
+
+        @include media-breakpoint-down(mobile) {
+            padding: 26px 0 37px 20px;
+            flex-wrap: wrap;
+            box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        &-col{
+            width: 50%;
+
+            &:last-child{
+                display: flex;
+                flex-direction: column;
+
+                @media (max-width: 500px){
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+
+    &__text{
+        margin-bottom: 7px;
+    }
+
+    &__name{
+        font-size: 24px;
+        line-height: 34px;
+        color: #000;
+        font-weight: 600;
+        max-width: 249px;
+        display: block;
+    }
+
+    &__price{
+        display: flex;
+        align-items: flex-end;
+        margin-top: 22px;
+
+        &-new{
+            color: #EE7307;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        &-old{
+            font-size: 14px;
+            line-height: 29px;
+            text-decoration: line-through;
+            display: block;
+            margin-left: 17px;
+        }
+    }
+
+    &__list{
+
+        &-item{
+            font-size: 14px;
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 15px;
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                background-color: #808080;
+                border-radius: 50%;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__button{
+        margin-top: auto;
+    }
+}
+
+.text{
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0,0,0,0.5);
+    display: block;
+}
+
+.button{
+    max-width: 140px;
+    background-color: #26A792;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 27px 10px 27px;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: #219280;
+    }
+
+    &__icon{
+        width: 7px;
+    }
+}
+
+.sezon{
+    padding-bottom: 95px;
+
+    &__wrap{
+        max-width: 421px;
+    }
+
+    &__inner{
+        position: relative;
+        margin-top: 55px;
+
+        @include media-breakpoint-down(mobile) {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 0;
+        }
+    }
+
+    &__product{
+        background-color: #fff;
+        color: #000;
+        padding: 32px 46px 51px;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
+        border-radius: 20px 0px;
+        position: relative;
+
+        @include media-breakpoint-down(mobile) {
+            border-radius: 0;
+            width: auto;
+            margin: 0 -20px;
+            padding: 32px 20px 60px;
+        }
+
+        &-wrap{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-item{
+            width: auto;
+            flex-shrink: 0;
+            margin: 0 10px;
+
+            &:nth-child(1){
+
+                .sezon__product-pic img{
+                    width: 63px;
+                }
+
+                .sezon__product-pic--sezon img{
+                    width: 91px;
+                }
+                
+            }
+
+            &:nth-child(2){
+
+                .sezon__product-pic img{
+                    width: 241px;
+                }
+
+                .sezon__product-pic--sezon img{
+                    width: 65px;
+                }
+                
+            }
+
+            &:nth-child(3){
+
+                .sezon__product-pic img{
+                    width: 34px;
+                }
+
+                .sezon__product-pic--sezon img{
+                    width: 160px;
+                }
+                
+            }
+
+            &:nth-child(4){
+
+                .sezon__product-pic img{
+                    width: 146px;
+                }
+
+                .sezon__product-pic--sezon img{
+                    width: 232px;
+                }
+                
+            }
+        }
+
+        &-name{
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &-price{
+            display: flex;
+            align-items: flex-end;
+            margin-top: 7px;
+            margin-bottom: 12px;
+
+            &--new{
+                color: #EE7307;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 700;
+                margin-right: 10px;
+            }
+
+            &--old{
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 12px;
+                line-height: 18px;
+                text-decoration: line-through;
+            }
+
+            &--current{
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+        &-pic{
+            height: 166px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 13px;
+        }
+    }
+
+    &__text{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #000000;
+        display: block;
+        margin-bottom: 60px;
+
+        @include media-breakpoint-down(mobile) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__name{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__button{
+        max-width: 193px;
+        padding: 10px 18px 10px 17px;
+    }
+
+    &__pic{
+        position: absolute;
+        right: 0;
+        bottom: 65%;
+        max-width: 710px;
+        z-index: -1;
+
+        @include media-breakpoint-down(tablet) {
+            bottom: 78%;
+            max-width: 570px;
+        }
+
+        &--eco{
+            max-width: 565px;
+            bottom: 87%;
+            border-radius: 40px;
+            overflow: hidden;
+
+            @include media-breakpoint-down(tablet){
+                max-width: 514px;
+            }
+        }
+
+        @media (max-width: 1024px){
+            bottom: 85%;
+            max-width: 390px;
+        }
+
+        @include media-breakpoint-down(mobile) {
+            position: relative;
+            max-width: 500px;
+            margin: auto;
+            bottom: -52px;
+        }
+    }
+
+    &__title{
+        margin-bottom: 30px;
+    }
+}
+
+.title{
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #000000;
+    display: block;
+    font-family: 'FuturaDemiC', sans-serif;
+    border-bottom: 5px solid #26A792;
+    padding-bottom: 10px;
+
+    @include media-breakpoint-down(mobile) {
+        font-size: 38px;
+        line-height: 41px;
+    }
+}
+
+.colection{
+    padding-bottom: 204px;
+
+    @media (max-width: 1024px){
+        padding-bottom: 60px;
+    }
+
+    @include media-breakpoint-down(mobile) {
+        padding-bottom: 50px;
+    }
+
+    &__right{
+        width: 100%;
+        padding-left: 94px;
+        padding-top: 126px;
+        position: relative;
+
+        @include media-breakpoint-down(tablet) {
+            padding-left: 50px;
+        }
+
+        @media (max-width: 1024px){
+            padding-left: 45px;
+            padding-top: 45px;
+        }
+
+        @include media-breakpoint-down(mobile) {
+            background-image: url(../assets/images/colection-wave1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 258px 0 98px 20px;
+            margin: -164px -20px 0;
+            width: auto;
+            height: 100%;
+            background-position: center;
+        }
+    }
+
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button{
+        width: 193px;
+        max-width: 100%;
+        padding: 10px 22px 10px 20px;
+
+        @include media-breakpoint-down(mobile) {
+            display: none;
+        }
+
+        &--hide{
+            display: none;
+
+            @include media-breakpoint-down(mobile) {
+                display: flex;
+                width: 100%;
+                max-width: 193px;
+                padding: 10px 20px 10px 20px;
+            }
+        }
+    }
+
+    &-slider{
+        margin-top: 95px;
+
+        @media (max-width: 1024px){
+            margin-top: 45px;
+        }
+
+        @include media-breakpoint-down(mobile) {
+            margin-top: 35px;
+        }
+
+        &__pic{
+            max-width: 565px;
+            border-radius: 40px;
+            overflow: hidden;
+            flex-shrink: 0;
+
+            @media (max-width: 1024px){
+                max-width: 380px;
+            }
+
+            &-wrap{
+                position: relative;
+                z-index: 1;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                background-image: url('../assets/images/colection-wave.png');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 1160px;
+
+                @media (max-width: 1024px){
+                    top: 20px;
+                    bottom: 20px;
+                }
+
+                @include media-breakpoint-down(mobile) {
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__bottom{
+        position: relative;
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: 0;
+            right: 0;
+            bottom: 35px;
+            background-color: #242526;
+
+            @media (max-width: 1024px){
+                top: 20px;
+                bottom: 20px;
+            }
+
+            @include media-breakpoint-down(mobile) {
+                content: none;
+            }
+        }
+
+        .container{
+            height: 100%;
+        }
+    }
+
+    &-wrap{
+        display: flex;
+        position: relative;
+        height: 100%;
+
+        @include media-breakpoint-down(mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &__name{
+        font-size: 38px;
+        line-height: 50px;
+        display: block;
+        margin-bottom: 18px;
+        &--small{
+            color: #26A792;
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 7px;
+        }
+    }
+
+    &__text{
+        font-size: 16px;
+        line-height: 24px;
+
+        @include media-breakpoint-down(mobile) {
+            display: block;
+            margin-bottom: 46px;
+            max-width: 360px;
+        }
+    }
+}
+
+.swiper-pagination{
+    right: calc((100vw - 565px) / 2);
+    bottom: 80px;
+
+    @include media-breakpoint-down(tablet) {
+        right: auto;
+        left: 645px;
+    }
+
+    @media (max-width: 1024px){
+        bottom: 20px;
+        left: 452px;
+    }
+
+    @include media-breakpoint-down(mobile) {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet{
+        border-radius: 0;
+        opacity: 1;
+        margin: 0 5px;
+        padding: 20px 0;
+        background: transparent;
+        width: 30px;
+
+        &::after{
+            content: '';
+            background: #B7B7B7;
+            height: 3px;
+            display: block;
+        }
+    }
+
+    .swiper-pagination-bullet-active{
+        background: transparent;
+
+        &::after{
+            background: #26A792;
+        }
+    }
+}
+
+.technology{
+
+    &__section{
+        position: relative;
+        overflow: hidden;
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 55px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #242526;
+
+            @include media-breakpoint-down(mobile) {
+                content: none;
+            }
+        }
+    }
+
+    &__inner{
+        display: flex;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+
+        @media (max-width: 1024px){
+            flex-direction: column;
+        }
+
+        @include media-breakpoint-down(mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &__col{
+        position: relative;
+        z-index: 1;
+        &:first-child{
+            max-width: 565px;
+            flex-shrink: 0;
+
+            @include media-breakpoint-down(mobile) {
+                position: relative;
+                z-index: 100;
+            }
+        }
+
+        &--right{
+            flex-grow: 1;
+            padding-left: 94px;
+            padding-top: 26px;
+
+            @include media-breakpoint-down(tablet) {
+                padding-left: 40px;
+            }
+
+            @media (max-width: 1024px){
+                padding-left: 0;
+                margin-top: 20px;
+                padding-bottom: 40px;
+            }
+
+            @include media-breakpoint-down(mobile) {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 308px;
+                padding-bottom: 51px;
+                width: auto;
+                margin: -150px -20px 0;
+                background-image: url(../assets/images/technology-wave1.png);        
+                background-size: cover;
+                background-position: center;
+
+            }
+        }
+    }
+    &__title{
+        display: inline-block;
+    }
+
+    &__button{
+        max-width: 182px;
+        width: 100%;
+    }
+
+    &__pic{
+        position: relative;
+        top: 26px;
+    }
+
+    &__name{
+        display: block;
+        font-size: 38px;
+        line-height: 50px;
+        margin-bottom: 18px;
+    }
+
+    &__text{
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 34px;
+    }
+
+    &__wave{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 1160px;
+
+        @include media-breakpoint-down(mobile) {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 500px){
+
+    .hansgrohe__main-col{
+        width: 100%;
+    }
+
+    .hansgrohe__name{
+        max-width: 100%;
+    }
+
+    .hansgrohe__price{
+        margin-top: 8px;
+    }
+
+    .hansgrohe__list{
+        margin-bottom: 26px;
+    }
+}
+
+.ps__rail-x{
+    margin: 0 46px 20px;
+    height: 6px !important;
+
+    @include media-breakpoint-down(mobile) {
+        margin: 0 30px 24px;
+    }
+}
+
+.ps__rail-x, .ps__rail-y {
+    opacity: 1 !important;
+    background-color: #F6F6F6 !important;
+}
+
+.ps__rail-x:hover > .ps__thumb-x, .ps__rail-x:focus > .ps__thumb-x, .ps__rail-x.ps--clicking .ps__thumb-x{
+    background-color: #26A792 !important;
+    height: 6px !important;
+    bottom: 0 !important;
+}
+
+.ps__thumb-x{
+    background-color: #26A792 !important;
+    bottom: 0 !important;
+    border-radius: 0px !important;
+}
+
+.swiper-slide{
+    @include media-breakpoint-down(mobile) {
+        height: auto;
+    }
+}
+
+@media (max-width: 413px){
+
+    .main__title {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 30px 0 30px;
+    }
+
+    .hansgrohe__head {
+        padding: 20px 0 20px 110px;
+    }
+
+    .hansgrohe__head-pic {
+        width: 70px;
+        top: -17px;
+        left: 20px;
+    }
+
+    .hansgrohe__head-title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
