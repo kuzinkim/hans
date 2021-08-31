@@ -962,6 +962,7 @@
 .ps__rail-x, .ps__rail-y {
     opacity: 1 !important;
     background-color: #F6F6F6 !important;
+    pointer-events: none !important;
 }
 
 .ps__rail-x:hover > .ps__thumb-x, .ps__rail-x:focus > .ps__thumb-x, .ps__rail-x.ps--clicking .ps__thumb-x{
